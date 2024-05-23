@@ -23,27 +23,13 @@ public class Launcher {
 	private static Scanner scanner = new Scanner(System.in);
 	private static final int QUIT = 10;
 
-	/**
-	 * Entry point of program - no need to modify this method
-	 * 
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		launchMenu();
 		scanner.close();// close scanner once menu system completes
 	}
 
-	// TODO modify readData method to populate List appropriately - method partially
-	// completed already
-	// TODO add static methods to this class as required to achieve tasks outlined
-	// in menu
-	// TODO modify launchMenu method to add calls to new methods you write etc to
-	// accomplish the tasks outlined in the menu
-
 	/**
 	 * Launches menu system which in turn calls appropriate methods based on user
-	 * choices Partially implemented already. Requires updating to add calls to other
-	 * methods written to achieve the tasks described in tasks 3-9
 	 */
 	public static void launchMenu() {
 		List<Accommodation> mainList = readRoomData("Rooms.csv");
